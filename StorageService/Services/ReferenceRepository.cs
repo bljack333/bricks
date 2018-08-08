@@ -39,5 +39,35 @@ namespace StorageServices.Services
 
             return response.Result.Data;
         }
+
+        public MySet GetMySet(string setNumber)
+        {
+            var token = GetUserToken();
+
+            var client = new RestClient();
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/sets/{1}/",token.UserToken, setNumber));
+            var request = new RestRequest();
+            request.AddHeader("Authorization", AUTH_KEY);
+            request.RootElement = "MySet";
+
+            var response = client.ExecuteGetTaskAsync<MySet>(request);
+
+            return response.Result.Data;
+        }
+
+        private Token GetUserToken()
+        {
+            var client = new RestClient();
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("_token"));
+            var request = new RestRequest();
+            request.AddParameter("username", "spragum");
+            request.AddParameter("password", "L3g0I@n)");
+            request.AddHeader("Authorization", AUTH_KEY);
+            request.RootElement = "Set";
+
+            var response = client.ExecuteAsPost<Token>(request,"POST");
+
+            return response.Data;
+        }
     }
 }

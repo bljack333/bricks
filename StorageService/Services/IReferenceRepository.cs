@@ -11,5 +11,6 @@ namespace StorageServices.Services
         Set GetSet(string setNumber);
         Part GetPart(string partNumber);
 
+        MySet GetMySet(string setNumber);
     }
 }
