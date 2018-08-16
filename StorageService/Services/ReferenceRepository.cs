@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using RestSharp;
 using StorageServices.Entities;
+using StorageServices.Entities.Rebrickable;
+using Set = StorageServices.Entities.Rebrickable.Set;
 
 namespace StorageServices.Services
 {

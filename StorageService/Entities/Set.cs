@@ -2,23 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using RestSharp.Deserializers;
 
 namespace StorageServices.Entities
 {
     public class Set
     {
-        [DeserializeAs(Name = "set_num")]
-        public string SetNumber { get; set; }
-        public string Name { get; set; }
-        public int Year { get; set; }
-        [DeserializeAs(Name = "theme_id")]
-        public int ThemeId { get; set; }
-        [DeserializeAs(Name = "num_parts")]
-        public int NumberOfParts { get; set; }
-        [DeserializeAs(Name = "set_img_url")]
-        public string SetImgUrl { get; set; }
-        [DeserializeAs(Name = "last_modified_dt")]
-        public DateTime LastModifiedDate { get; set; }
+        public int Id { get; set; }
+        public bool IsItBuilt { get; set; }
+        public int StorageAreaId { get; set; }
+        public bool HaveInstructions { get; set; }
+        public bool HaveBox { get; set; }
+        public bool HaveStickers { get; set; }
+        public bool StickersOnModel { get; set; }
+        public SetState SetState { get; set; }
+    }
+
+    public enum SetState
+    {
+        Displayed,
+        Boxed,
+        PartedOut
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using StorageServices.Entities;
+using StorageServices.Entities.Rebrickable;
+using Set = StorageServices.Entities.Rebrickable.Set;
 
 namespace StorageServices.Services
 {
