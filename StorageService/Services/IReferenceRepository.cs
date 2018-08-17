@@ -12,7 +12,7 @@ namespace StorageServices.Services
     {
         Set GetSet(string setNumber);
         Part GetPart(string partNumber);
-
-        MySet GetMySet(string setNumber);
+        SetInstance GetMySet(string setNumber);
+        IEnumerable<SetInstance> GetMySets();
     }
 }

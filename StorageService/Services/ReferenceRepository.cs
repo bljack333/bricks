@@ -42,7 +42,7 @@ namespace StorageServices.Services
             return response.Result.Data;
         }
 
-        public MySet GetMySet(string setNumber)
+        public SetInstance GetMySet(string setNumber)
         {
             var token = GetUserToken();
 
@@ -52,7 +52,22 @@ namespace StorageServices.Services
             request.AddHeader("Authorization", AUTH_KEY);
             request.RootElement = "MySet";
 
-            var response = client.ExecuteGetTaskAsync<MySet>(request);
+            var response = client.ExecuteGetTaskAsync<SetInstance>(request);
+
+            return response.Result.Data;
+        }
+
+        public IEnumerable<SetInstance> GetMySets()
+        {
+            var token = GetUserToken();
+
+            var client = new RestClient();
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/sets", token.UserToken));
+            var request = new RestRequest();
+            request.AddHeader("Authorization", AUTH_KEY);
+            request.RootElement = "MySet";
+
+            var response = client.ExecuteGetTaskAsync<IEnumerable<SetInstance>>(request);
 
             return response.Result.Data;
         }

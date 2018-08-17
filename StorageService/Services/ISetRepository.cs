@@ -8,6 +8,7 @@ namespace StorageServices.Services
 {
     public interface ISetRepository
     {
-        Set GetSet(int Id);
+        MySet GetSet(int Id);
+        IEnumerable<MySet> GetMySets();
     }
 }

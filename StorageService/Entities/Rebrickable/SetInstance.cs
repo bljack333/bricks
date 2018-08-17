@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace StorageServices.Entities.Rebrickable
 {
-    public class MySet
+    public class SetInstance
     {
         public string ListId { get; set; }
         public int Quantity { get; set; }

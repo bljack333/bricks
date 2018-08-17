@@ -12,7 +12,7 @@ namespace StorageServices.Services
     {
         private const string SETS = "Data/sets.json";
 
-        public Set GetSet(int Id)
+        public MySet GetSet(int Id)
         {
             var reader = new StreamReader(SETS);
 
@@ -20,10 +20,23 @@ namespace StorageServices.Services
 
             reader.Close();
 
-            var sets = JsonConvert.DeserializeObject<IEnumerable<Set>>(setsString);
+            var sets = JsonConvert.DeserializeObject<IEnumerable<MySet>>(setsString);
 
             return sets.FirstOrDefault(c => c.Id == Id);
 
+        }
+
+        public IEnumerable<MySet> GetMySets()
+        {
+            var reader = new StreamReader(SETS);
+
+            string setsString = reader.ReadToEnd();
+
+            reader.Close();
+
+            var sets = JsonConvert.DeserializeObject<IEnumerable<MySet>>(setsString);
+
+            return sets;
         }
     }
 }
