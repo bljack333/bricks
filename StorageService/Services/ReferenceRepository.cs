@@ -72,6 +72,19 @@ namespace StorageServices.Services
             return response.Result.Data;
         }
 
+        public Theme GetTheme(int themeId)
+        {
+            var client = new RestClient();
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("themes/{0}/", themeId));
+            var request = new RestRequest();
+            request.AddHeader("Authorization", AUTH_KEY);
+            request.RootElement = "Theme";
+
+            var response = client.ExecuteGetTaskAsync<Theme>(request);
+
+            return response.Result.Data;
+        }
+
         private Token GetUserToken()
         {
             var client = new RestClient();

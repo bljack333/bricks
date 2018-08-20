@@ -39,6 +39,7 @@ namespace StorageService
             }
 
             app.UseMvc();
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader());
         }
     }
 }

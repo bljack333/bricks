@@ -23,7 +23,20 @@ namespace StorageServices.Controllers
         }
 
         [HttpGet()]
-        public IEnumerable<MySet> GetAllOfMySets()
+        public IActionResult GetAllOfMySets()
+        {
+            return new JsonResult(GetAllSets());
+        }
+
+        [HttpGet("{setState}")]
+        public IActionResult GetSetsByState(SetState setState)
+        {
+            var allMySets = GetAllSets();
+
+            return new JsonResult(allMySets.Where(s => s.SetState == setState));
+        }
+
+        private IEnumerable<MySet> GetAllSets()
         {
             var mySets = _setRepository.GetMySets();
             var myRebrickableSets = _referenceRepository.GetMySets();
@@ -48,12 +61,5 @@ namespace StorageServices.Controllers
             return domainSets;
         }
 
-        [HttpGet("{setState}")]
-        public IEnumerable<MySet> GetSetsByState(SetState setState)
-        {
-            var allMySets = GetAllOfMySets();
-
-            return allMySets.Where(s => s.SetState == setState);
-        }
     }
 }
