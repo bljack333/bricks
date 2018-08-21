@@ -34,6 +34,9 @@ namespace StorageServices.Services
 
             reader.Close();
 
+            if (String.IsNullOrWhiteSpace(setsString))
+            { return new List<MySet>();}
+
             var sets = JsonConvert.DeserializeObject<IEnumerable<MySet>>(setsString);
 
             return sets;
