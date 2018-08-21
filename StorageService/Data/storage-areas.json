@@ -1,1 +1,27 @@
-[{"Id":1,"Name":"West Wall Basement","Description":"West Wall of Lower Level"},{"Id":2,"Name":"South Wall Basement","Description":"South Wall of Lower Level"},{"Id":3,"Name":"Storage Box Crates","Description":"Milk Crates Containing standard Storage Boxes"},{"Id":4,"Name":"Laundry Room","Description":"Shelves in Laundry Room"},{"Id":5,"Name":"Laundry Room","Description":"Shelves in Laundry Room"}]
+[
+  {
+    "Id": 1,
+    "Name": "West Wall Basement",
+    "Description": "West Wall of Lower Level"
+  },
+  {
+    "Id": 2,
+    "Name": "South Wall Basement",
+    "Description": "South Wall of Lower Level"
+  },
+  {
+    "Id": 3,
+    "Name": "Storage Box Crates",
+    "Description": "Milk Crates Containing standard Storage Boxes"
+  },
+  {
+    "Id": 4,
+    "Name": "Laundry Room",
+    "Description": "Shelves in Laundry Room"
+  },
+  {
+    "Id": 5,
+    "Name": "Laundry Room",
+    "Description": "Shelves in Laundry Room"
+  }
+]

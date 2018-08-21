@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using RestSharp.Deserializers;
 
-namespace StorageServices.Entities
+namespace StorageServices.Entities.Rebrickable
 {
     public class Set
     {
@@ -18,6 +18,8 @@ namespace StorageServices.Entities
         public int NumberOfParts { get; set; }
         [DeserializeAs(Name = "set_img_url")]
         public string SetImgUrl { get; set; }
+        [DeserializeAs(Name = "set_url")]
+        public string SetUrl { get; set; }
         [DeserializeAs(Name = "last_modified_dt")]
         public DateTime LastModifiedDate { get; set; }
     }
