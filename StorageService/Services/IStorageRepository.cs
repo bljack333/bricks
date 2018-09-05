@@ -13,5 +13,6 @@ namespace StorageServices.Services
         IEnumerable<ContainerDivisionSlot> GetSlotsForContainerAndStorageArea(int storageAreaId, int containerId);
 
         StorageArea AddStorageArea(StorageArea newStorageArea);
+        IEnumerable<Container> GetContainers(IEnumerable<int> containerIds);
     }
 }

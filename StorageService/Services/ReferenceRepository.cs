@@ -16,15 +16,32 @@ namespace StorageServices.Services
         private const string LEGO_API = "/lego/";
         private const string USER_API = "/users/";
 
-        public Part GetPart(string partNumber)
+        public Response<PartInstance> GetPart(string partNumber)
         {
+            var token = GetUserToken();
+
             var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("parts/{0}/", partNumber));
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/allparts/?part_num={1}/", token.UserToken, partNumber));
             var request = new RestRequest();
             request.AddHeader("Authorization", AUTH_KEY);
-            request.RootElement = "Part";
+            request.RootElement = "Response";
 
-            var response = client.ExecuteGetTaskAsync<Part>(request);
+            var response = client.ExecuteGetTaskAsync<Response<PartInstance>>(request);
+
+            return response.Result.Data;
+        }
+
+        public Response<PartInstance> GetMyParts()
+        {
+            var token = GetUserToken();
+
+            var client = new RestClient();
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/allparts/", token.UserToken));
+            var request = new RestRequest();
+            request.AddHeader("Authorization", AUTH_KEY);
+            request.RootElement = "Response<PartInstance>>";
+
+            var response = client.ExecuteGetTaskAsync<Response<PartInstance>>(request);
 
             return response.Result.Data;
         }

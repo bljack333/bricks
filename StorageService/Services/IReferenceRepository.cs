@@ -12,9 +12,10 @@ namespace StorageServices.Services
     public interface IReferenceRepository
     {
         Set GetSet(string setNumber);
-        Part GetPart(string partNumber);
+        Response<PartInstance> GetPart(string partNumber);
         SetInstance GetMySet(string setNumber);
         IEnumerable<SetInstance> GetMySets();
         Theme GetTheme(int themeId);
+        Response<PartInstance> GetMyParts();
     }
 }

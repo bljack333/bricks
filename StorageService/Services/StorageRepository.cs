@@ -76,5 +76,18 @@ namespace StorageServices.Services
 
             return newStorageArea;
         }
+
+        public IEnumerable<Container> GetContainers(IEnumerable<int> containerIds)
+        {
+            var reader = new StreamReader(CONTAINERS);
+
+            string containersString = reader.ReadToEnd();
+
+            reader.Close();
+
+            var containers = JsonConvert.DeserializeObject<IEnumerable<Container>>(containersString);
+
+            return containers.Where(c => containerIds.ToList().Exists(i => i == c.Id));
+        }
     }
 }
