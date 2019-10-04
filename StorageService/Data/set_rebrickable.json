@@ -1,0 +1,1507 @@
+{
+    "count": 291,
+    "next": "https://rebrickable.com/api/v3/users/41392646f22a5cb928ef0e88154ca6821423c56e6b4a609fedacb826a43834cd/sets/?page=2",
+    "previous": null,
+    "results": [
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10020-2",
+                "name": "Santa Fe Super Chief, Limited Edition",
+                "year": 2002,
+                "theme_id": 236,
+                "num_parts": 433,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10020-2.jpg",
+                "set_url": "https://rebrickable.com/sets/10020-2/santa-fe-super-chief-limited-edition/",
+                "last_modified_dt": "2016-04-23T11:35:26.281517Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10182-1",
+                "name": "Cafe Corner",
+                "year": 2007,
+                "theme_id": 155,
+                "num_parts": 2058,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10182-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10182-1/cafe-corner/",
+                "last_modified_dt": "2016-04-23T11:53:29.178459Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10194-1",
+                "name": "Emerald Night",
+                "year": 2009,
+                "theme_id": 240,
+                "num_parts": 1089,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10194-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10194-1/emerald-night/",
+                "last_modified_dt": "2016-04-23T11:56:55.433932Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10185-1",
+                "name": "Green Grocer",
+                "year": 2008,
+                "theme_id": 155,
+                "num_parts": 2358,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10185-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10185-1/green-grocer/",
+                "last_modified_dt": "2016-04-23T11:53:18.502825Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10197-1",
+                "name": "Fire Brigade",
+                "year": 2009,
+                "theme_id": 155,
+                "num_parts": 2236,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10197-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10197-1/fire-brigade/",
+                "last_modified_dt": "2019-01-14T20:25:38.478267Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10173-1",
+                "name": "Holiday Train",
+                "year": 2006,
+                "theme_id": 236,
+                "num_parts": 969,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10173-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10173-1/holiday-train/",
+                "last_modified_dt": "2016-08-03T18:34:28.029622Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4956-1",
+                "name": "House",
+                "year": 2007,
+                "theme_id": 672,
+                "num_parts": 731,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4956-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4956-1/house/",
+                "last_modified_dt": "2018-11-29T21:05:57.137244Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10106-1",
+                "name": "Snowflake",
+                "year": 2006,
+                "theme_id": 227,
+                "num_parts": 107,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10106-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10106-1/snowflake/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "5770-1",
+                "name": "Lighthouse Island",
+                "year": 2011,
+                "theme_id": 672,
+                "num_parts": 518,
+                "set_img_url": "https://m.rebrickable.com/media/sets/5770-1.jpg",
+                "set_url": "https://rebrickable.com/sets/5770-1/lighthouse-island/",
+                "last_modified_dt": "2018-11-30T18:51:28.277243Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4954-1",
+                "name": "Model Town House",
+                "year": 2007,
+                "theme_id": 672,
+                "num_parts": 1174,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4954-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4954-1/model-town-house/",
+                "last_modified_dt": "2018-11-29T21:06:37.950315Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10020-1",
+                "name": "Santa Fe Super Chief, NOT the Limited Edition",
+                "year": 2002,
+                "theme_id": 236,
+                "num_parts": 427,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10020-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10020-1/santa-fe-super-chief-not-the-limited-edition/",
+                "last_modified_dt": "2016-04-23T11:49:15.657140Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10170-1",
+                "name": "TTX Intermodal Double-Stack Car",
+                "year": 2005,
+                "theme_id": 236,
+                "num_parts": 365,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10170-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10170-1/ttx-intermodal-double-stack-car/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "7595-1",
+                "name": "Army Men on Patrol",
+                "year": 2010,
+                "theme_id": 275,
+                "num_parts": 90,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7595-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7595-1/army-men-on-patrol/",
+                "last_modified_dt": "2016-04-23T11:59:26.105731Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10001-1",
+                "name": "Metroliner",
+                "year": 2001,
+                "theme_id": 233,
+                "num_parts": 785,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10001-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10001-1/metroliner/",
+                "last_modified_dt": "2016-04-23T11:52:28.384695Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "5771-1",
+                "name": "Hillside House",
+                "year": 2011,
+                "theme_id": 672,
+                "num_parts": 710,
+                "set_img_url": "https://m.rebrickable.com/media/sets/5771-1.jpg",
+                "set_url": "https://rebrickable.com/sets/5771-1/hillside-house/",
+                "last_modified_dt": "2018-11-30T18:50:17.498136Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10068-1",
+                "name": "Santa Claus",
+                "year": 2002,
+                "theme_id": 227,
+                "num_parts": 39,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10068-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10068-1/santa-claus/",
+                "last_modified_dt": "2016-04-23T11:50:39.408667Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10090-1",
+                "name": "Turkey",
+                "year": 2003,
+                "theme_id": 231,
+                "num_parts": 54,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10090-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10090-1/turkey/",
+                "last_modified_dt": "2014-07-26T10:06:59.813569Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "4547-1",
+                "name": "Club Car",
+                "year": 1993,
+                "theme_id": 236,
+                "num_parts": 292,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4547-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4547-1/club-car/",
+                "last_modified_dt": "2015-11-24T10:59:51.120190Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 3,
+            "include_spares": true,
+            "set": {
+                "set_num": "10022-1",
+                "name": "Santa Fe Cars - Set II (dining, observation, or sleeping car)",
+                "year": 2002,
+                "theme_id": 237,
+                "num_parts": 410,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10022-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10022-1/santa-fe-cars-set-ii-dining-observation-or-sleeping-car/",
+                "last_modified_dt": "2016-04-23T11:35:10.176660Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10019-1",
+                "name": "Rebel Blockade Runner - UCS",
+                "year": 2001,
+                "theme_id": 174,
+                "num_parts": 1747,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10019-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10019-1/rebel-blockade-runner-ucs/",
+                "last_modified_dt": "2016-04-23T11:33:20.726976Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4558-1",
+                "name": "Metroliner",
+                "year": 1991,
+                "theme_id": 236,
+                "num_parts": 786,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4558-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4558-1/metroliner/",
+                "last_modified_dt": "2016-04-23T11:53:02.938356Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7639-1",
+                "name": "Camper",
+                "year": 2009,
+                "theme_id": 63,
+                "num_parts": 164,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7639-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7639-1/camper/",
+                "last_modified_dt": "2014-10-13T17:07:33.947423Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 3,
+            "include_spares": true,
+            "set": {
+                "set_num": "10025-1",
+                "name": "Santa Fe Cars - Set I (mail or baggage car)",
+                "year": 2002,
+                "theme_id": 237,
+                "num_parts": 325,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10025-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10025-1/santa-fe-cars-set-i-mail-or-baggage-car/",
+                "last_modified_dt": "2016-04-23T11:49:14.559117Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "10027-1",
+                "name": "Train Engine Shed",
+                "year": 2003,
+                "theme_id": 239,
+                "num_parts": 670,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10027-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10027-1/train-engine-shed/",
+                "last_modified_dt": "2016-04-23T11:34:36.052735Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10199-1",
+                "name": "Winter Toy Shop",
+                "year": 2009,
+                "theme_id": 227,
+                "num_parts": 815,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10199-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10199-1/winter-toy-shop/",
+                "last_modified_dt": "2016-04-23T11:58:37.144581Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10080-1",
+                "name": "Angel",
+                "year": 2003,
+                "theme_id": 227,
+                "num_parts": 33,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10080-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10080-1/angel/",
+                "last_modified_dt": "2017-01-11T14:38:34.095423Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "30071-1",
+                "name": "Army Jeep",
+                "year": 2010,
+                "theme_id": 275,
+                "num_parts": 37,
+                "set_img_url": "https://m.rebrickable.com/media/sets/30071-1.jpg",
+                "set_url": "https://rebrickable.com/sets/30071-1/army-jeep/",
+                "last_modified_dt": "2016-10-17T17:29:42.738497Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "5891-1",
+                "name": "Apple Tree House",
+                "year": 2010,
+                "theme_id": 672,
+                "num_parts": 539,
+                "set_img_url": "https://m.rebrickable.com/media/sets/5891-1.jpg",
+                "set_url": "https://rebrickable.com/sets/5891-1/apple-tree-house/",
+                "last_modified_dt": "2018-11-29T21:15:15.658376Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "1263-1",
+                "name": "Easter Bunny",
+                "year": 2000,
+                "theme_id": 229,
+                "num_parts": 29,
+                "set_img_url": "https://m.rebrickable.com/media/sets/1263-1.jpg",
+                "set_url": "https://rebrickable.com/sets/1263-1/easter-bunny/",
+                "last_modified_dt": "2016-04-23T11:46:28.611017Z"
+            }
+        },
+        {
+            "list_id": 189449,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10216-1",
+                "name": "Winter Village Bakery",
+                "year": 2010,
+                "theme_id": 227,
+                "num_parts": 686,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10216-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10216-1/winter-village-bakery/",
+                "last_modified_dt": "2016-04-23T12:01:28.148034Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7171-1",
+                "name": "Mos Espa Podrace",
+                "year": 1999,
+                "theme_id": 166,
+                "num_parts": 913,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7171-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7171-1/mos-espa-podrace/",
+                "last_modified_dt": "2018-02-28T20:07:07.804316Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "8403-1",
+                "name": "City House",
+                "year": 2010,
+                "theme_id": 50,
+                "num_parts": 384,
+                "set_img_url": "https://m.rebrickable.com/media/sets/8403-1.jpg",
+                "set_url": "https://rebrickable.com/sets/8403-1/city-house/",
+                "last_modified_dt": "2016-04-23T11:51:32.718663Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 5,
+            "include_spares": true,
+            "set": {
+                "set_num": "10078-1",
+                "name": "Train Connection Wire",
+                "year": 2003,
+                "theme_id": 257,
+                "num_parts": 1,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10078-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10078-1/train-connection-wire/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7708-1",
+                "name": "Uplink",
+                "year": 2006,
+                "theme_id": 389,
+                "num_parts": 68,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7708-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7708-1/uplink/",
+                "last_modified_dt": "2016-04-23T11:50:40.282542Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "8222-1",
+                "name": "V-TOL",
+                "year": 1997,
+                "theme_id": 6,
+                "num_parts": 140,
+                "set_img_url": "https://m.rebrickable.com/media/sets/8222-1.jpg",
+                "set_url": "https://rebrickable.com/sets/8222-1/v-tol/",
+                "last_modified_dt": "2016-04-23T11:50:38.946884Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 6,
+            "include_spares": true,
+            "set": {
+                "set_num": "10153-1",
+                "name": "Electric Train Motor 9V (My Own Train)",
+                "year": 2002,
+                "theme_id": 244,
+                "num_parts": 3,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10153-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10153-1/electric-train-motor-9v-my-own-train/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "8665-1",
+                "name": "Highway Enforcer {Box}",
+                "year": 2006,
+                "theme_id": 120,
+                "num_parts": 52,
+                "set_img_url": "https://m.rebrickable.com/media/sets/8665-1.jpg",
+                "set_url": "https://rebrickable.com/sets/8665-1/highway-enforcer-box/",
+                "last_modified_dt": "2016-04-23T11:55:06.555850Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "8252-1",
+                "name": "Beach Buster / Police Car",
+                "year": 1999,
+                "theme_id": 1,
+                "num_parts": 168,
+                "set_img_url": "https://m.rebrickable.com/media/sets/8252-1.jpg",
+                "set_url": "https://rebrickable.com/sets/8252-1/beach-buster-police-car/",
+                "last_modified_dt": "2016-04-23T11:54:08.534152Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "3219-1",
+                "name": "TIE Fighter - Mini",
+                "year": 2003,
+                "theme_id": 159,
+                "num_parts": 12,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3219-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3219-1/tie-fighter-mini/",
+                "last_modified_dt": "2011-08-11T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10012-1",
+                "name": "Assorted Yellow Plates",
+                "year": 2001,
+                "theme_id": 254,
+                "num_parts": 42,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10012-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10012-1/assorted-yellow-plates/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "3497-1",
+                "name": "2 x 4 Roof Tile Black",
+                "year": 2003,
+                "theme_id": 254,
+                "num_parts": 50,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3497-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3497-1/2-x-4-roof-tile-black/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7188-1",
+                "name": "King's Carriage Ambush",
+                "year": 2011,
+                "theme_id": 196,
+                "num_parts": 286,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7188-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7188-1/kings-carriage-ambush/",
+                "last_modified_dt": "2016-05-29T00:32:22.945015Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 3,
+            "include_spares": true,
+            "set": {
+                "set_num": "628-1",
+                "name": "X-Large Building Plate (Light Gray)",
+                "year": 1996,
+                "theme_id": 473,
+                "num_parts": 1,
+                "set_img_url": "https://m.rebrickable.com/media/sets/628-1.jpg",
+                "set_url": "https://rebrickable.com/sets/628-1/x-large-building-plate-light-gray/",
+                "last_modified_dt": "2011-09-25T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "10148-1",
+                "name": "Assorted Light Gray Plates",
+                "year": 2004,
+                "theme_id": 254,
+                "num_parts": 84,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10148-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10148-1/assorted-light-gray-plates/",
+                "last_modified_dt": "2013-02-02T07:25:22.187273Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7130-1",
+                "name": "Snowspeeder",
+                "year": 1999,
+                "theme_id": 169,
+                "num_parts": 217,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7130-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7130-1/snowspeeder/",
+                "last_modified_dt": "2018-02-28T20:03:25.513131Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "8458-1",
+                "name": "Silver Champion / Formula 1 Racer",
+                "year": 2000,
+                "theme_id": 12,
+                "num_parts": 1429,
+                "set_img_url": "https://m.rebrickable.com/media/sets/8458-1.jpg",
+                "set_url": "https://rebrickable.com/sets/8458-1/silver-champion-formula-1-racer/",
+                "last_modified_dt": "2016-04-23T11:50:01.454719Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7133-1",
+                "name": "Bounty Hunter Pursuit",
+                "year": 2002,
+                "theme_id": 167,
+                "num_parts": 254,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7133-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7133-1/bounty-hunter-pursuit/",
+                "last_modified_dt": "2016-04-23T11:35:23.397917Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "4494-1",
+                "name": "Imperial Shuttle - Mini",
+                "year": 2004,
+                "theme_id": 159,
+                "num_parts": 82,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4494-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4494-1/imperial-shuttle-mini/",
+                "last_modified_dt": "2016-09-11T17:23:59.763734Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7163-1",
+                "name": "Republic Gunship",
+                "year": 2002,
+                "theme_id": 167,
+                "num_parts": 697,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7163-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7163-1/republic-gunship/",
+                "last_modified_dt": "2016-04-23T11:45:21.333487Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "10007-1",
+                "name": "2 x 4 Sand Red Ridge Roof Tiles Steep Slope",
+                "year": 2001,
+                "theme_id": 254,
+                "num_parts": 25,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10007-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10007-1/2-x-4-sand-red-ridge-roof-tiles-steep-slope/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 5,
+            "include_spares": true,
+            "set": {
+                "set_num": "3486-1",
+                "name": "1 x 6 Black Plates",
+                "year": 2000,
+                "theme_id": 254,
+                "num_parts": 50,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3486-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3486-1/1-x-6-black-plates/",
+                "last_modified_dt": "2013-07-29T07:52:13.655715Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "8877-1",
+                "name": "Vladek's Dark Fortress",
+                "year": 2005,
+                "theme_id": 198,
+                "num_parts": 989,
+                "set_img_url": "https://m.rebrickable.com/media/sets/8877-1.jpg",
+                "set_url": "https://rebrickable.com/sets/8877-1/vladeks-dark-fortress/",
+                "last_modified_dt": "2016-10-01T07:23:03.032301Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10010-1",
+                "name": "Assorted Yellow Bricks",
+                "year": 2003,
+                "theme_id": 254,
+                "num_parts": 63,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10010-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10010-1/assorted-yellow-bricks/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10193-1",
+                "name": "Medieval Market Village",
+                "year": 2009,
+                "theme_id": 193,
+                "num_parts": 1618,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10193-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10193-1/medieval-market-village/",
+                "last_modified_dt": "2016-04-23T12:01:13.251874Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7900-1",
+                "name": "Heavy Loader",
+                "year": 2006,
+                "theme_id": 56,
+                "num_parts": 347,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7900-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7900-1/heavy-loader/",
+                "last_modified_dt": "2016-04-23T11:55:01.994268Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 3,
+            "include_spares": true,
+            "set": {
+                "set_num": "3488-1",
+                "name": "1 x 6 Red Plates",
+                "year": 2000,
+                "theme_id": 254,
+                "num_parts": 50,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3488-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3488-1/1-x-6-red-plates/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10152-1",
+                "name": "Maersk Sealand Container Ship 2004 Edition",
+                "year": 2004,
+                "theme_id": 276,
+                "num_parts": 982,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10152-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10152-1/maersk-sealand-container-ship-2004-edition/",
+                "last_modified_dt": "2016-04-23T11:47:12.026941Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7146-1",
+                "name": "TIE Fighter",
+                "year": 2001,
+                "theme_id": 169,
+                "num_parts": 171,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7146-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7146-1/tie-fighter/",
+                "last_modified_dt": "2016-04-23T11:49:16.373863Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 3,
+            "include_spares": true,
+            "set": {
+                "set_num": "10149-1",
+                "name": "Assorted Dark Gray Plates",
+                "year": 2004,
+                "theme_id": 254,
+                "num_parts": 42,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10149-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10149-1/assorted-dark-gray-plates/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10054-1",
+                "name": "Black Slopes 33 3 x 2 and 3 x 4",
+                "year": 2003,
+                "theme_id": 254,
+                "num_parts": 68,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10054-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10054-1/black-slopes-33-3-x-2-and-3-x-4/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4482-1",
+                "name": "AT-TE",
+                "year": 2003,
+                "theme_id": 167,
+                "num_parts": 650,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4482-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4482-1/at-te/",
+                "last_modified_dt": "2016-04-23T11:52:49.026730Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10014-1",
+                "name": "Caboose",
+                "year": 2001,
+                "theme_id": 238,
+                "num_parts": 170,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10014-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10014-1/caboose/",
+                "last_modified_dt": "2016-04-23T11:34:34.053738Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4679-1",
+                "name": "Bricks and Creations Tub",
+                "year": 2004,
+                "theme_id": 37,
+                "num_parts": 1,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4679-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4679-1/bricks-and-creations-tub/",
+                "last_modified_dt": "2012-04-01T08:05:21.145960Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "20004-1",
+                "name": "Jungle Cruiser",
+                "year": 2008,
+                "theme_id": 265,
+                "num_parts": 83,
+                "set_img_url": "https://m.rebrickable.com/media/sets/20004-1.jpg",
+                "set_url": "https://rebrickable.com/sets/20004-1/jungle-cruiser/",
+                "last_modified_dt": "2016-04-23T11:59:42.504781Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10009-1",
+                "name": "Assorted Blue Bricks",
+                "year": 2001,
+                "theme_id": 254,
+                "num_parts": 62,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10009-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10009-1/assorted-blue-bricks/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "3736-1",
+                "name": "Blue Train Doors with Panes",
+                "year": 2000,
+                "theme_id": 257,
+                "num_parts": 20,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3736-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3736-1/blue-train-doors-with-panes/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4535-1",
+                "name": "LEGO Express Deluxe",
+                "year": 2002,
+                "theme_id": 238,
+                "num_parts": 754,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4535-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4535-1/lego-express-deluxe/",
+                "last_modified_dt": "2016-04-23T11:53:53.294523Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7316-1",
+                "name": "Excavation Searcher",
+                "year": 2001,
+                "theme_id": 135,
+                "num_parts": 467,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7316-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7316-1/excavation-searcher/",
+                "last_modified_dt": "2016-04-23T11:50:40.109202Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 4,
+            "include_spares": true,
+            "set": {
+                "set_num": "3746-1",
+                "name": "Locomotive Brown Bricks",
+                "year": 2001,
+                "theme_id": 238,
+                "num_parts": 106,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3746-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3746-1/locomotive-brown-bricks/",
+                "last_modified_dt": "2016-04-23T11:49:07.325517Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4504-1",
+                "name": "Millennium Falcon (Redesign), Blue box",
+                "year": 2003,
+                "theme_id": 169,
+                "num_parts": 996,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4504-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4504-1/millennium-falcon-redesign-blue-box/",
+                "last_modified_dt": "2016-04-23T11:33:56.043844Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7115-1",
+                "name": "Gungan Patrol",
+                "year": 2000,
+                "theme_id": 166,
+                "num_parts": 79,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7115-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7115-1/gungan-patrol/",
+                "last_modified_dt": "2018-02-28T20:15:15.934049Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4755-1",
+                "name": "Knight Bus",
+                "year": 2004,
+                "theme_id": 250,
+                "num_parts": 244,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4755-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4755-1/knight-bus/",
+                "last_modified_dt": "2016-04-23T11:46:38.740009Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7312-1",
+                "name": "T3-Trike",
+                "year": 2001,
+                "theme_id": 135,
+                "num_parts": 99,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7312-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7312-1/t3-trike/",
+                "last_modified_dt": "2016-04-23T11:53:05.089962Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4793-1",
+                "name": "Ogel Sub Shark",
+                "year": 2002,
+                "theme_id": 305,
+                "num_parts": 114,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4793-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4793-1/ogel-sub-shark/",
+                "last_modified_dt": "2014-12-16T20:40:09.111121Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "9748-1",
+                "name": "Droid Developer Kit",
+                "year": 1999,
+                "theme_id": 261,
+                "num_parts": 658,
+                "set_img_url": "https://m.rebrickable.com/media/sets/9748-1.jpg",
+                "set_url": "https://rebrickable.com/sets/9748-1/droid-developer-kit/",
+                "last_modified_dt": "2016-04-23T11:44:28.088003Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4485-1",
+                "name": "Sebulba's Podracer & Anakin's Podracer - Mini",
+                "year": 2003,
+                "theme_id": 159,
+                "num_parts": 72,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4485-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4485-1/sebulbas-podracer-anakins-podracer-mini/",
+                "last_modified_dt": "2016-04-23T11:32:58.144198Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 2,
+            "include_spares": true,
+            "set": {
+                "set_num": "4758-1",
+                "name": "Hogwarts Express (2nd edition)",
+                "year": 2004,
+                "theme_id": 250,
+                "num_parts": 388,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4758-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4758-1/hogwarts-express-2nd-edition/",
+                "last_modified_dt": "2018-04-14T07:44:58.608652Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7150-1",
+                "name": "TIE Fighter & Y-wing",
+                "year": 1999,
+                "theme_id": 169,
+                "num_parts": 410,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7150-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7150-1/tie-fighter-y-wing/",
+                "last_modified_dt": "2018-02-28T20:05:33.310620Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10159-1",
+                "name": "City Airport -City Logo Box",
+                "year": 2004,
+                "theme_id": 53,
+                "num_parts": 913,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10159-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10159-1/city-airport-city-logo-box/",
+                "last_modified_dt": "2017-05-03T09:50:10.516795Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4794-1",
+                "name": "Alpha Team Command Sub",
+                "year": 2002,
+                "theme_id": 305,
+                "num_parts": 188,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4794-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4794-1/alpha-team-command-sub/",
+                "last_modified_dt": "2016-04-23T11:53:51.105813Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "6774-1",
+                "name": "Alpha Team ATV",
+                "year": 2001,
+                "theme_id": 304,
+                "num_parts": 134,
+                "set_img_url": "https://m.rebrickable.com/media/sets/6774-1.jpg",
+                "set_url": "https://rebrickable.com/sets/6774-1/alpha-team-atv/",
+                "last_modified_dt": "2016-04-23T11:44:35.883859Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4024-1",
+                "name": "Advent Calendar 2003 Creator",
+                "year": 2003,
+                "theme_id": 214,
+                "num_parts": 24,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4024-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4024-1/advent-calendar-2003-creator/",
+                "last_modified_dt": "2012-04-10T11:12:20.045604Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10170-1",
+                "name": "TTX Intermodal Double-Stack Car",
+                "year": 2005,
+                "theme_id": 236,
+                "num_parts": 365,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10170-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10170-1/ttx-intermodal-double-stack-car/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "3677-1",
+                "name": "Red Cargo Train",
+                "year": 2011,
+                "theme_id": 240,
+                "num_parts": 826,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3677-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3677-1/red-cargo-train/",
+                "last_modified_dt": "2016-05-29T00:27:25.841326Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "3807-1",
+                "name": "Snaptrax S45",
+                "year": 2002,
+                "theme_id": 463,
+                "num_parts": 202,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3807-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3807-1/snaptrax-s45/",
+                "last_modified_dt": "2011-09-25T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "8153-1",
+                "name": "Ferrari F1 Truck 1:55",
+                "year": 2008,
+                "theme_id": 114,
+                "num_parts": 269,
+                "set_img_url": "https://m.rebrickable.com/media/sets/8153-1.jpg",
+                "set_url": "https://rebrickable.com/sets/8153-1/ferrari-f1-truck-155/",
+                "last_modified_dt": "2016-04-23T11:53:19.541378Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4338-1",
+                "name": "Monster Pod",
+                "year": 2005,
+                "theme_id": 478,
+                "num_parts": 49,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4338-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4338-1/monster-pod/",
+                "last_modified_dt": "2016-04-23T11:34:19.124414Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "3451-1",
+                "name": "Sopwith Camel",
+                "year": 2001,
+                "theme_id": 276,
+                "num_parts": 576,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3451-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3451-1/sopwith-camel/",
+                "last_modified_dt": "2016-06-26T11:10:12.801143Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4486-1",
+                "name": "AT-ST & Snowspeeder - Mini",
+                "year": 2003,
+                "theme_id": 159,
+                "num_parts": 76,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4486-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4486-1/at-st-snowspeeder-mini/",
+                "last_modified_dt": "2016-04-23T11:44:30.564290Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4609-1",
+                "name": "Fire Attack Team",
+                "year": 2001,
+                "theme_id": 283,
+                "num_parts": 97,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4609-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4609-1/fire-attack-team/",
+                "last_modified_dt": "2014-10-16T08:37:55.914663Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "3495-1",
+                "name": "2 x 2 Roof Tiles Steep Sloped Black",
+                "year": 2003,
+                "theme_id": 254,
+                "num_parts": 100,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3495-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3495-1/2-x-2-roof-tiles-steep-sloped-black/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10015-1",
+                "name": "Passenger Wagon",
+                "year": 2001,
+                "theme_id": 238,
+                "num_parts": 194,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10015-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10015-1/passenger-wagon/",
+                "last_modified_dt": "2016-04-23T11:44:37.077676Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7194-1",
+                "name": "Yoda",
+                "year": 2002,
+                "theme_id": 158,
+                "num_parts": 1076,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7194-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7194-1/yoda/",
+                "last_modified_dt": "2016-04-23T11:45:17.495941Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "7139-1",
+                "name": "Ewok Attack",
+                "year": 2002,
+                "theme_id": 169,
+                "num_parts": 121,
+                "set_img_url": "https://m.rebrickable.com/media/sets/7139-1.jpg",
+                "set_url": "https://rebrickable.com/sets/7139-1/ewok-attack/",
+                "last_modified_dt": "2016-04-23T11:45:31.916425Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "3732-1",
+                "name": "Castle Expander Pack",
+                "year": 2000,
+                "theme_id": 255,
+                "num_parts": 24,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3732-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3732-1/castle-expander-pack/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "4490-1",
+                "name": "Republic Gunship - Mini",
+                "year": 2003,
+                "theme_id": 159,
+                "num_parts": 102,
+                "set_img_url": "https://m.rebrickable.com/media/sets/4490-1.jpg",
+                "set_url": "https://rebrickable.com/sets/4490-1/republic-gunship-mini/",
+                "last_modified_dt": "2016-04-23T11:33:09.426800Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "10183-1",
+                "name": "Hobby Train",
+                "year": 2007,
+                "theme_id": 397,
+                "num_parts": 1080,
+                "set_img_url": "https://m.rebrickable.com/media/sets/10183-1.jpg",
+                "set_url": "https://rebrickable.com/sets/10183-1/hobby-train/",
+                "last_modified_dt": "2016-04-23T11:50:25.644935Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 11,
+            "include_spares": true,
+            "set": {
+                "set_num": "3471-1",
+                "name": "1 x 4 Dark Green Bricks",
+                "year": 2000,
+                "theme_id": 254,
+                "num_parts": 50,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3471-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3471-1/1-x-4-dark-green-bricks/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 1,
+            "include_spares": true,
+            "set": {
+                "set_num": "5218-1",
+                "name": "Pneumatic Pack",
+                "year": 2000,
+                "theme_id": 19,
+                "num_parts": 152,
+                "set_img_url": "https://m.rebrickable.com/media/sets/5218-1.jpg",
+                "set_url": "https://rebrickable.com/sets/5218-1/pneumatic-pack/",
+                "last_modified_dt": "2015-07-26T15:49:33.198603Z"
+            }
+        },
+        {
+            "list_id": 189450,
+            "quantity": 12,
+            "include_spares": true,
+            "set": {
+                "set_num": "3472-1",
+                "name": "1 x 4 Red Bricks",
+                "year": 2000,
+                "theme_id": 254,
+                "num_parts": 50,
+                "set_img_url": "https://m.rebrickable.com/media/sets/3472-1.jpg",
+                "set_url": "https://rebrickable.com/sets/3472-1/1-x-4-red-bricks/",
+                "last_modified_dt": "2011-09-05T14:00:00Z"
+            }
+        }
+    ]
+}

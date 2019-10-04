@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using StorageServices.App_Start;
 using StorageServices.Services;
 
 namespace StorageService
@@ -35,6 +36,7 @@ namespace StorageService
             services.AddScoped<IReferenceRepository, ReferenceRepository>();
             services.AddScoped<ISetRepository, SetRepository>();
             services.AddScoped<IPartsRepository, PartsRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +50,8 @@ namespace StorageService
 
             app.UseCors("AllowAllHeaders");
             app.UseMvc();
+
+            StorageMapperConfiguration.ConfigureMappings();
         }
     }
 }

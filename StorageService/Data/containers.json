@@ -1,18 +1,1 @@
-﻿[
-  {
-    "id": 1,
-    "description": "Red Mixed Drawer Container",
-    "type": 1,
-    "storageAreaId": 1,
-    "divisions": [],
-    "location": ""
-  },
-  {
-    id: 2,
-    description: "Gray Small Drawer Container",
-    type: 1,
-    storageAreaId: 1,
-    divisions: [],
-    location: ""
-  }
-]
+[{"Id":1,"Description":"Red Mixed Drawer Container","Location":"","Rows":0,"Columns":0,"StorageAreaId":1,"ContainerType":0,"Slots":null},{"Id":2,"Description":"Gray Small Drawer Container","Location":"","Rows":0,"Columns":0,"StorageAreaId":1,"ContainerType":0,"Slots":null}]

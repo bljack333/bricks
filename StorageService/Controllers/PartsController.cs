@@ -25,52 +25,55 @@ namespace StorageServices.Controllers
         }
 
         [HttpGet()]
-        public IEnumerable<MyPart> GetMyParts()
+        public IEnumerable<MyPart> GetMyParts(int page, int pageSize)
         {
+            var referenceParts = _referenceRepository.GetMyParts(page, pageSize);
+
             var partsList = new List<MyPart>();
 
             var myParts = _partsRepository.GetMyParts();
 
-            foreach (var myPart in myParts)
+            foreach (var referencePart in referenceParts.Result.Results)
             {
-                var newPart = partsList.FirstOrDefault(l => l.PartNumber == myPart.PartNumber);
-
-                var response = _referenceRepository.GetPart(myPart.PartNumber);
+                var newPart = partsList.FirstOrDefault(l => l.PartNumber == referencePart.Part.PartNumber);
 
                 if (newPart == null)
                 {
                     newPart = new MyPart();
-                    var refPart = response.Results.First().Part;
 
-                    newPart.PartNumber = refPart.PartNumber;
-                    newPart.PartCategoryId = refPart.PartCategoryId;
-                    newPart.PartImageUrl = refPart.PartImageUrl;
-                    newPart.PartUrl = refPart.PartUrl;
-                    newPart.Name = refPart.Name;
+                    newPart.PartNumber = referencePart.Part.PartNumber;
+                    newPart.PartCategoryId = referencePart.Part.PartCategoryId;
+                    newPart.PartImageUrl = referencePart.Part.PartImageUrl;
+                    newPart.PartUrl = referencePart.Part.PartUrl;
+                    newPart.Name = referencePart.Part.Name;
+
+                    partsList.Add(newPart);
                 }
-            
-                // map refPart to newPart
-                foreach (var partInstance in response.Results)
-                {
-                    newPart.Quantity += partInstance.Quantity;
 
-                    if (newPart.Colors == null)
-                    {
-                        newPart.Colors = new List<Color>();
-                    }
+                if (newPart.Colors == null)
+                {
+                    newPart.Colors = new List<Color>();
+                }
+
+                var color = newPart.Colors.FirstOrDefault(c => c.Name == referencePart.Color.Name);
+
+                if (color != null)
+                {
+                    newPart.Quantity += referencePart.Quantity;
+                }
+                else
+                {
                     var newColor = new Color();
 
-                    newColor.Quantity = partInstance.Quantity;
-                    newColor.Name = partInstance.Color.Name;
-                    newColor.IsTransparent = partInstance.Color.IsTransparent;
-                    newColor.RGB = partInstance.Color.RGB;
+                    newColor.Quantity = referencePart.Quantity;
+                    newColor.Name = referencePart.Color.Name;
+                    newColor.IsTransparent = referencePart.Color.IsTransparent;
+                    newColor.RGB = referencePart.Color.RGB;
 
                     newPart.Colors.ToList().Add(newColor);
                 }
 
-                newPart.Containers = _storageRepository.GetContainers(myPart.ContainerIds);
-
-                partsList.Add(newPart);
+                newPart.Containers = _storageRepository.GetContainers(newPart.Containers.Select(c => c.Id).ToArray());
             }
 
             return partsList;

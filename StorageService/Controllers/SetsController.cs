@@ -21,6 +21,7 @@ namespace StorageServices.Controllers
         {
             _setRepository = setRepository;
             _referenceRepository = referenceRepository;
+
         }
 
         [HttpGet()]
@@ -40,20 +41,24 @@ namespace StorageServices.Controllers
         private IEnumerable<MySet> GetAllSets()
         {
             var mySets = _setRepository.GetMySets();
-            var myRebrickableSets = _referenceRepository.GetMySets();
+            var myRebrickableSets = _referenceRepository.GetMySets().Result.Data;
             var domainSets = new List<MySet>();
 
-            foreach (var set in mySets)
+            foreach (var rebrickableSet in myRebrickableSets.Results)
             {
-                var rebrickableSet = myRebrickableSets.FirstOrDefault(s => s.Set.SetNumber == set.SetNumber);
+                var set = mySets.FirstOrDefault(s => s.SetNumber == rebrickableSet.Set.SetNumber);
 
                 var domainSet = new MySet();
 
-                domainSet = Mapper.Map<MySet>(set);
+                domainSet = Mapper.Map<MySet>(rebrickableSet.Set);
 
-                if (rebrickableSet != null)
+                if (set != null)
                 {
-                    domainSet = Mapper.Map<MySet>(rebrickableSet);
+                    domainSet = Mapper.Map<MySet>(set);
+                }
+                else
+                {
+                    domainSet.SetState = SetState.Unclassified;
                 }
 
                 domainSets.Add(domainSet);

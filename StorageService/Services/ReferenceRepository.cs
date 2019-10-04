@@ -6,6 +6,7 @@ using RestSharp;
 using StorageServices.Entities;
 using StorageServices.Entities.Rebrickable;
 using Set = StorageServices.Entities.Rebrickable.Set;
+using Newtonsoft.Json;
 
 namespace StorageServices.Services
 {
@@ -16,19 +17,22 @@ namespace StorageServices.Services
         private const string LEGO_API = "/lego/";
         private const string USER_API = "/users/";
 
-        public Response<PartInstance> GetPart(string partNumber)
+        public  async Task<Response<PartInstance>> GetPart(string partNumber)
         {
             var token = GetUserToken();
 
             var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/allparts/?part_num={1}/", token.UserToken, partNumber));
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("{0}/allparts/?part_num={1}", token.UserToken, partNumber));
             var request = new RestRequest();
             request.AddHeader("Authorization", AUTH_KEY);
             request.RootElement = "Response";
 
-            var response = client.ExecuteGetTaskAsync<Response<PartInstance>>(request);
+            TaskCompletionSource<IRestResponse> taskCompletion = new TaskCompletionSource<IRestResponse>();
 
-            return response.Result.Data;
+            RestRequestAsyncHandle handle = client.ExecuteAsync(request, r => taskCompletion.SetResult(r));
+
+            RestResponse response = (RestResponse)(await taskCompletion.Task);
+            return JsonConvert.DeserializeObject<Response<PartInstance>>(response.Content);
         }
 
         public Response<PartInstance> GetMyParts()
@@ -36,7 +40,7 @@ namespace StorageServices.Services
             var token = GetUserToken();
 
             var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/allparts/", token.UserToken));
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("{0}/allparts/", token.UserToken));
             var request = new RestRequest();
             request.AddHeader("Authorization", AUTH_KEY);
             request.RootElement = "Response<PartInstance>>";
@@ -44,6 +48,26 @@ namespace StorageServices.Services
             var response = client.ExecuteGetTaskAsync<Response<PartInstance>>(request);
 
             return response.Result.Data;
+        }
+
+        public async Task<Response<PartInstance>> GetMyParts(int page, int size)
+        {
+            var token = GetUserToken();
+
+            var client = new RestClient();
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("{0}/allparts/", token.UserToken));
+            var request = new RestRequest();
+            request.AddHeader("Authorization", AUTH_KEY);
+            request.RootElement = "Response<PartInstance>>";
+            request.AddParameter("page", page);
+            request.AddParameter("page_size", size);
+
+            TaskCompletionSource<IRestResponse> taskCompletion = new TaskCompletionSource<IRestResponse>();
+
+            RestRequestAsyncHandle handle = client.ExecuteAsync(request, r => taskCompletion.SetResult(r));
+
+            RestResponse response = (RestResponse)(await taskCompletion.Task);
+            return JsonConvert.DeserializeObject<Response<PartInstance>>(response.Content);
         }
 
         public Set GetSet(string setNumber)
@@ -64,7 +88,7 @@ namespace StorageServices.Services
             var token = GetUserToken();
 
             var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/sets/{1}/",token.UserToken, setNumber));
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("{0}/sets/{1}/",token.UserToken, setNumber));
             var request = new RestRequest();
             request.AddHeader("Authorization", AUTH_KEY);
             request.RootElement = "MySet";
@@ -74,19 +98,20 @@ namespace StorageServices.Services
             return response.Result.Data;
         }
 
-        public IEnumerable<SetInstance> GetMySets()
+        public async Task<IRestResponse<Response<SetInstance>>> GetMySets()
         {
             var token = GetUserToken();
 
             var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/sets", token.UserToken));
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("{0}/sets/", token.UserToken));
             var request = new RestRequest();
             request.AddHeader("Authorization", AUTH_KEY);
             request.RootElement = "MySet";
 
-            var response = client.ExecuteGetTaskAsync<IEnumerable<SetInstance>>(request);
+            var response = client.ExecuteGetTaskAsync<Response<SetInstance>>(request);
 
-            return response.Result.Data;
+            var waited = await response;
+            return waited;
         }
 
         public Theme GetTheme(int themeId)
@@ -105,7 +130,7 @@ namespace StorageServices.Services
         private Token GetUserToken()
         {
             var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("_token"));
+            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("_token/"));
             var request = new RestRequest();
             request.AddParameter("username", "spragum");
             request.AddParameter("password", "L3g0I@n)");

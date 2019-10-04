@@ -33,7 +33,8 @@ namespace StorageServices.Domain
     {
         Displayed,
         Boxed,
-        PartedOut
+        PartedOut,
+        Unclassified
     }
 
 }

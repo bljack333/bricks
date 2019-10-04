@@ -14,5 +14,10 @@ namespace StorageServices.Services
 
         StorageArea AddStorageArea(StorageArea newStorageArea);
         IEnumerable<Container> GetContainers(IEnumerable<int> containerIds);
+        StorageArea SaveStorageArea(StorageArea storageArea);
+        void RemoveStorageArea(int areaId);
+        Container GetContainer(int containerId);
+        Container AddContainer(Container container);
+        Container SaveContainer(Container container);
     }
 }

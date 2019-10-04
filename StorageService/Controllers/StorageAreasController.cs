@@ -40,5 +40,23 @@ namespace StorageServices.Controllers
 
             return GetStorageAreas();
         }
+
+        [HttpPost()]
+        [Route("{id}")]
+        public IActionResult UpdateStorageArea([FromBody]StorageArea storageArea)
+        {
+            _storageRepository.SaveStorageArea(storageArea);
+
+            return GetStorageAreas();
+        }
+
+        [HttpDelete()]
+        [Route("{id}")]
+        public IActionResult RemoveStorageArea(int id)
+        {
+            _storageRepository.RemoveStorageArea(id);
+
+            return new JsonResult("");
+        }
     }
 }
