@@ -17,10 +17,10 @@ namespace StorageServices.Controllers
             _storageRepository = storageRepository;
         }
 
-        [HttpGet("api/storageAreas/{storageAreaId}/containers")]
-        public IActionResult GetContainersForStorageArea(int storageAreaId)
+        [HttpGet("api/storageLocations/{storageLocationId}/containers")]
+        public IActionResult GetContainersForStorageLocation(int storageLocationId)
         {
-            var containers = _storageRepository.GetContainersForStorageArea(storageAreaId);
+            var containers = _storageRepository.GetContainersForStorageLocation(storageLocationId);
 
             return new JsonResult(containers);
         }
@@ -38,7 +38,7 @@ namespace StorageServices.Controllers
         {
             _storageRepository.AddContainer(newContainer);
 
-            return GetContainersForStorageArea(newContainer.StorageAreaId);
+            return GetContainersForStorageLocation(newContainer.StorageLocationId);
         }
 
         [HttpPost("api/containers/{id}")]
@@ -46,7 +46,7 @@ namespace StorageServices.Controllers
         {
             _storageRepository.SaveContainer(container);
 
-            return GetContainersForStorageArea(container.StorageAreaId);
+            return GetContainersForStorageLocation(container.StorageLocationId);
         }
 
 

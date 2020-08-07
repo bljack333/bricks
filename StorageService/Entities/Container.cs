@@ -12,10 +12,11 @@ namespace StorageServices.Entities
         public string Location { get; set; }
         public int Rows { get; set; }
         public int Columns { get; set; }
-        public int StorageAreaId { get; set; }
+        public int StorageLocationId { get; set; }
         public ContainerTypeEnum ContainerType { get; set; }
 
         public List<ContainerDivisionSlot> Slots { get; set; }
+        public List<Container> SubContainers { get; set; }
     }
 
     public enum ContainerTypeEnum
@@ -23,7 +24,11 @@ namespace StorageServices.Entities
         StorageBox,
         Drawers,
         Bulk,
-        ZipBag
+        ZipBag,
+        IkeaBigBox,
+        IkeaMedBox,
+        LegoYellowBox,
+        
     }
 
     public class ContainerDivisionSlot

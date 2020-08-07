@@ -8,14 +8,14 @@ namespace StorageServices.Services
 {
     public interface IStorageRepository
     {
-        IEnumerable<StorageArea> GetStorageAreas();
-        IEnumerable<Container> GetContainersForStorageArea(int storageAreaId);
-        IEnumerable<ContainerDivisionSlot> GetSlotsForContainerAndStorageArea(int storageAreaId, int containerId);
+        IEnumerable<StorageLocation> GetStorageLocations();
+        IEnumerable<Container> GetContainersForStorageLocation(int storageLocationId);
+        IEnumerable<ContainerDivisionSlot> GetSlotsForContainerAndStorageLocation(int storageLocationId, int containerId);
 
-        StorageArea AddStorageArea(StorageArea newStorageArea);
+        StorageLocation AddStorageLocation(StorageLocation newStorageLocation);
         IEnumerable<Container> GetContainers(IEnumerable<int> containerIds);
-        StorageArea SaveStorageArea(StorageArea storageArea);
-        void RemoveStorageArea(int areaId);
+        StorageLocation SaveStorageLocation(StorageLocation storageLocation);
+        void RemoveStorageLocation(int LocationId);
         Container GetContainer(int containerId);
         Container AddContainer(Container container);
         Container SaveContainer(Container container);

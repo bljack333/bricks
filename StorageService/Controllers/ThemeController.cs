@@ -19,7 +19,21 @@ namespace StorageServices.Controllers
             _referenceRepository = referenceRepository;
         }
 
-        [HttpGet("/{themeId}")]
+        [HttpGet()]
+        public IEnumerable<Theme> GetThemes()
+        {
+            var themesResult = _referenceRepository.GetThemes();
+            var themes = new List<Theme>();
+
+            foreach(var result in themesResult.Result.Data.Results)
+            {
+                themes.Add(result);
+            }
+
+            return themes;
+        }
+
+        [HttpGet("{themeId}")]
         public Theme GetTheme(int themeId)
         {
             return _referenceRepository.GetTheme(themeId);

@@ -10,29 +10,29 @@ namespace StorageServices.Services
 {
     public class StorageRepository : IStorageRepository
     {
-        private const string STORAGE_AREAS = "Data/storage-areas.json";
+        private const string STORAGE_LOCATION = "Data/storage-location.json";
         private const string CONTAINERS = "Data/containers.json";
         private const string SLOTS = "Data/slots.json";
 
-        public IEnumerable<StorageArea> GetStorageAreas()
+        public IEnumerable<StorageLocation> GetStorageLocations()
         {
-            var reader = new StreamReader(STORAGE_AREAS);
+            var reader = new StreamReader(STORAGE_LOCATION);
 
-            string storageAreasString = reader.ReadToEnd();
+            string storageLocationsString = reader.ReadToEnd();
 
             reader.Close();
 
-            var storageAreas = JsonConvert.DeserializeObject<IEnumerable<StorageArea>>(storageAreasString);
+            var storageLocations = JsonConvert.DeserializeObject<IEnumerable<StorageLocation>>(storageLocationsString);
 
-            return storageAreas;
+            return storageLocations;
         }
 
-        public StorageArea GetStorageArea(int id)
+        public StorageLocation GetStorageLocation(int id)
         {
-            return GetStorageAreas().FirstOrDefault(sa => sa.Id == id);
+            return GetStorageLocations().FirstOrDefault(sl => sl.Id == id);
         }
 
-        public IEnumerable<Container> GetContainersForStorageArea(int storageAreaId) {
+        public IEnumerable<Container> GetContainersForStorageLocation(int storageLocationId) {
             var reader = new StreamReader(CONTAINERS);
 
             string containersString = reader.ReadToEnd();
@@ -41,10 +41,10 @@ namespace StorageServices.Services
 
             var containers = JsonConvert.DeserializeObject<IEnumerable<Container>>(containersString);
 
-            return containers.Where(c => c.StorageAreaId == storageAreaId);
+            return containers.Where(c => c.StorageLocationId == storageLocationId);
         }
 
-        public IEnumerable<ContainerDivisionSlot> GetSlotsForContainerAndStorageArea(int storageAreaId, int containerId)
+        public IEnumerable<ContainerDivisionSlot> GetSlotsForContainerAndStorageLocation(int storageLocationId, int containerId)
         {
             var reader = new StreamReader(SLOTS);
 
@@ -57,24 +57,24 @@ namespace StorageServices.Services
             return slots;
         }
 
-        public StorageArea AddStorageArea(StorageArea newStorageArea)
+        public StorageLocation AddStorageLocation(StorageLocation newStorageLocation)
         {
-            var storageAreas = this.GetStorageAreas();
+            var storageLocations = this.GetStorageLocations();
 
-            newStorageArea.Id = storageAreas.Max(sa => sa.Id) + 1;
+            newStorageLocation.Id = storageLocations.Max(sa => sa.Id) + 1;
 
-            List<StorageArea> storageAreaList = storageAreas.ToList();
+            List<StorageLocation> storageLocationList = storageLocations.ToList();
             
-            storageAreaList.Add(newStorageArea);
+            storageLocationList.Add(newStorageLocation);
 
-            using (StreamWriter file = File.CreateText(STORAGE_AREAS))
+            using (StreamWriter file = File.CreateText(STORAGE_LOCATION))
             {
                 JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, storageAreaList);
+                serializer.Serialize(file, storageLocationList);
                 file.Close();
             }
 
-            return newStorageArea;
+            return newStorageLocation;
         }
 
         public IEnumerable<Container> GetContainers(IEnumerable<int> containerIds)
@@ -103,37 +103,37 @@ namespace StorageServices.Services
             return containers;
         }
 
-        public StorageArea SaveStorageArea(StorageArea storageArea)
+        public StorageLocation SaveStorageLocation(StorageLocation storageLocation)
         {
-            var storageAreas = this.GetStorageAreas();
+            var storageLocations = this.GetStorageLocations();
 
-            List<StorageArea> storageAreaList = storageAreas.ToList();
+            List<StorageLocation> storageLocationList = storageLocations.ToList();
 
-            var storageAreaToUpdate = storageAreaList.First(s => s.Id == storageArea.Id);
-            var indexOf = storageAreaList.IndexOf(storageAreaToUpdate);
-            storageAreaList.RemoveAt(indexOf);
+            var storageLocationToUpdate = storageLocationList.First(s => s.Id == storageLocation.Id);
+            var indexOf = storageLocationList.IndexOf(storageLocationToUpdate);
+            storageLocationList.RemoveAt(indexOf);
 
-            storageAreaList.Insert(indexOf, storageArea);
-            using (StreamWriter file = File.CreateText(STORAGE_AREAS))
+            storageLocationList.Insert(indexOf, storageLocation);
+            using (StreamWriter file = File.CreateText(STORAGE_LOCATION))
             {
                 JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, storageAreaList);
+                serializer.Serialize(file, storageLocationList);
                 file.Close();
             }
 
-            return storageAreaToUpdate;
+            return storageLocationToUpdate;
         }
 
-        public void RemoveStorageArea(int areaId)
+        public void RemoveStorageLocation(int LocationId)
         {
-            var areas = GetStorageAreas().ToList();
+            var Locations = GetStorageLocations().ToList();
 
-            areas.Remove(areas.Find(a => a.Id == areaId));
+            Locations.Remove(Locations.Find(a => a.Id == LocationId));
 
-            using (StreamWriter file = File.CreateText(STORAGE_AREAS))
+            using (StreamWriter file = File.CreateText(STORAGE_LOCATION))
             {
                 JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, areas);
+                serializer.Serialize(file, Locations);
                 file.Close();
             }
         }

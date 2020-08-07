@@ -41,5 +41,19 @@ namespace StorageServices.Services
 
             return sets;
         }
+        public MySet GetSetBySetNumber(string setNumber)
+        {
+            var reader = new StreamReader(SETS);
+
+            string setsString = reader.ReadToEnd();
+
+            reader.Close();
+
+            var sets = JsonConvert.DeserializeObject<IEnumerable<MySet>>(setsString);
+
+            return sets.FirstOrDefault(c => c.SetNumber == setNumber);
+
+        }
+
     }
 }

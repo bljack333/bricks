@@ -17,6 +17,7 @@ namespace StorageServices.Services
         SetInstance GetMySet(string setNumber);
         Task<IRestResponse<Response<SetInstance>>> GetMySets();
         Theme GetTheme(int themeId);
+        Task<IRestResponse<Response<Theme>>> GetThemes();
         Response<PartInstance> GetMyParts();
         Task<Response<PartInstance>> GetMyParts(int page, int size);
     }

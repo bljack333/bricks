@@ -8,53 +8,53 @@ using System.Threading.Tasks;
 
 namespace StorageServices.Controllers
 {
-    [Route("/api/storageAreas")]
-    public class StorageAreasController : Controller
+    [Route("/api/storageLocations")]
+    public class StorageLocationsController : Controller
     {
         private IStorageRepository _storageRepository;
 
-        public StorageAreasController(IStorageRepository storageRepostiory)
+        public StorageLocationsController(IStorageRepository storageRepostiory)
         {
             _storageRepository = storageRepostiory;
         }
 
         [HttpGet()]
-        public IActionResult GetStorageAreas()
+        public IActionResult GetStorageLocations()
         {
-            var areasFromRepo = _storageRepository.GetStorageAreas();
-            return new JsonResult(areasFromRepo);
+            var LocationsFromRepo = _storageRepository.GetStorageLocations();
+            return new JsonResult(LocationsFromRepo);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetStorageArea(int id)
+        public IActionResult GetStorageLocation(int id)
         {
-            var areaFromRepo = _storageRepository.GetStorageAreas().FirstOrDefault(s => s.Id == id);
+            var LocationFromRepo = _storageRepository.GetStorageLocations().FirstOrDefault(s => s.Id == id);
 
-            return new JsonResult(areaFromRepo);
+            return new JsonResult(LocationFromRepo);
         }
 
         [HttpPost()]
-        public IActionResult CreateStorageArea([FromBody]StorageArea newStorageArea)
+        public IActionResult CreateStorageLocation([FromBody]StorageLocation newStorageLocation)
         {
-            _storageRepository.AddStorageArea(newStorageArea);
+            _storageRepository.AddStorageLocation(newStorageLocation);
 
-            return GetStorageAreas();
+            return GetStorageLocations();
         }
 
         [HttpPost()]
         [Route("{id}")]
-        public IActionResult UpdateStorageArea([FromBody]StorageArea storageArea)
+        public IActionResult UpdateStorageLocation([FromBody]StorageLocation storageLocation)
         {
-            _storageRepository.SaveStorageArea(storageArea);
+            _storageRepository.SaveStorageLocation(storageLocation);
 
-            return GetStorageAreas();
+            return GetStorageLocations();
         }
 
         [HttpDelete()]
         [Route("{id}")]
-        public IActionResult RemoveStorageArea(int id)
+        public IActionResult RemoveStorageLocation(int id)
         {
-            _storageRepository.RemoveStorageArea(id);
+            _storageRepository.RemoveStorageLocation(id);
 
             return new JsonResult("");
         }

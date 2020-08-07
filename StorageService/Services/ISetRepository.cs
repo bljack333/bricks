@@ -10,5 +10,6 @@ namespace StorageServices.Services
     {
         MySet GetSet(int Id);
         IEnumerable<MySet> GetMySets();
+        MySet GetSetBySetNumber(string setNumber);
     }
 }

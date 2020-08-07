@@ -67,5 +67,21 @@ namespace StorageServices.Controllers
             return domainSets;
         }
 
+        private MySet GetSetBySetNumber(string setNumber)
+        {
+            var myRebrickableSet = _referenceRepository.GetMySet(setNumber);
+
+            var domainSet = _setRepository.GetSetBySetNumber(setNumber);
+
+            var resultSet = Mapper.Map<MySet>(myRebrickableSet.Set);
+
+            if (domainSet != null)
+            {
+                resultSet = Mapper.Map<MySet>(domainSet);
+            }
+
+            return resultSet;
+        }
+
     }
 }
