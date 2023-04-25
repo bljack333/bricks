@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
+
 using RestSharp;
 using StorageServices.Entities;
 using StorageServices.Entities.Rebrickable;
@@ -18,86 +20,80 @@ namespace StorageServices.Services
 
         public Part GetPart(string partNumber)
         {
-            var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("parts/{0}/", partNumber));
-            var request = new RestRequest();
+            var options = new RestClientOptions(new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("parts/{0}/", partNumber)));
+            var client = new RestClient(options);
+            var request = new RestRequest("Part");
             request.AddHeader("Authorization", AUTH_KEY);
-            request.RootElement = "Part";
 
-            var response = client.ExecuteGetTaskAsync<Part>(request);
+            var response = client.GetAsync<Part>(request);
 
-            return response.Result.Data;
+            return response.Result;
         }
 
         public Set GetSet(string setNumber)
         {
-            var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("sets/{0}/", setNumber));
-            var request = new RestRequest();
+            var options = new RestClientOptions(new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("sets/{0}/", setNumber)));
+            var client = new RestClient(options);
+            var request = new RestRequest("Set");
             request.AddHeader("Authorization", AUTH_KEY);
-            request.RootElement = "Set";
 
-            var response = client.ExecuteGetTaskAsync<Set>(request);
+            var response = client.GetAsync<Set>(request);
 
-            return response.Result.Data;
+            return response.Result;
         }
 
         public SetInstance GetMySet(string setNumber)
         {
             var token = GetUserToken();
 
-            var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/sets/{1}/",token.UserToken, setNumber));
-            var request = new RestRequest();
+            var options = new RestClientOptions(new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("/{0}/sets/{1}/", token.UserToken, setNumber)));
+            var client = new RestClient(options);
+            var request = new RestRequest("MySet");
             request.AddHeader("Authorization", AUTH_KEY);
-            request.RootElement = "MySet";
 
-            var response = client.ExecuteGetTaskAsync<SetInstance>(request);
+            var response = client.GetAsync<SetInstance>(request);
 
-            return response.Result.Data;
+            return response.Result;
         }
 
         public IEnumerable<SetInstance> GetMySets()
         {
             var token = GetUserToken();
 
-            var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("/{0}/sets", token.UserToken));
-            var request = new RestRequest();
+            var options = new RestClientOptions(new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("/{0}/sets", token.UserToken)));
+            var client = new RestClient(options);
+            var request = new RestRequest("MySet");
             request.AddHeader("Authorization", AUTH_KEY);
-            request.RootElement = "MySet";
 
-            var response = client.ExecuteGetTaskAsync<IEnumerable<SetInstance>>(request);
+            var response = client.GetAsync<IEnumerable<SetInstance>>(request);
 
-            return response.Result.Data;
+            return response.Result;
         }
 
         public Theme GetTheme(int themeId)
         {
-            var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("themes/{0}/", themeId));
-            var request = new RestRequest();
+            var options = new RestClientOptions(new Uri(BASE_REBRICKABLE_API + LEGO_API + String.Format("themes/{0}/", themeId)));
+            var client = new RestClient(options);
+            var request = new RestRequest("Theme");
             request.AddHeader("Authorization", AUTH_KEY);
-            request.RootElement = "Theme";
 
-            var response = client.ExecuteGetTaskAsync<Theme>(request);
+            var response = client.GetAsync<Theme>(request);
 
-            return response.Result.Data;
+            return response.Result;
         }
 
         private Token GetUserToken()
         {
-            var client = new RestClient();
-            client.BaseUrl = new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("_token"));
-            var request = new RestRequest();
+            var options = new RestClientOptions(new Uri(BASE_REBRICKABLE_API + USER_API + String.Format("_token")));
+            var client = new RestClient(options);
+            var request = new RestRequest("Set");
             request.AddParameter("username", "spragum");
             request.AddParameter("password", "L3g0I@n)");
             request.AddHeader("Authorization", AUTH_KEY);
-            request.RootElement = "Set";
 
-            var response = client.ExecuteAsPost<Token>(request,"POST");
+            var response = client.Post<Token>(request);
 
-            return response.Data;
+            return response;
         }
     }
 }

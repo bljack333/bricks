@@ -1,13 +1,12 @@
-﻿using System;
+﻿using AutoMapper;
+
+using Microsoft.AspNetCore.Mvc;
+
+using StorageServices.Domain;
+using StorageServices.Services;
+
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Mvc;
-using StorageServices.Domain;
-using StorageServices.Entities.Rebrickable;
-using StorageServices.Services;
 
 namespace StorageServices.Controllers
 {
@@ -43,17 +42,24 @@ namespace StorageServices.Controllers
             var myRebrickableSets = _referenceRepository.GetMySets();
             var domainSets = new List<MySet>();
 
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<MySet, MySet>();
+            });
+
+            var mapper = config.CreateMapper();
+
             foreach (var set in mySets)
             {
                 var rebrickableSet = myRebrickableSets.FirstOrDefault(s => s.Set.SetNumber == set.SetNumber);
 
                 var domainSet = new MySet();
 
-                domainSet = Mapper.Map<MySet>(set);
+                domainSet = mapper.Map<MySet>(set);
 
                 if (rebrickableSet != null)
                 {
-                    domainSet = Mapper.Map<MySet>(rebrickableSet);
+                    domainSet = mapper.Map<MySet>(rebrickableSet);
                 }
 
                 domainSets.Add(domainSet);
